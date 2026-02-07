@@ -466,51 +466,57 @@ button:hover {
 
 /* home page */
 @media (max-width: 600px) {
+    .home-section {
+        padding: 20px 10px;
+    }
+
     .home-section h2 {
+        font-size: 1.5rem;
+        margin: 20px auto;
+        max-width: 90%;
         text-align: center;
-        margin-top: 20px;
-        margin-left: 100px;
-        width: 400px;
     }
-
     .home-section p {
-        text-align: center;
         font-size: 1rem;
-        margin: 40px 20px;
+        margin: 15px auto 30px auto;
+        max-width: 90%;
+        text-align: center;
     }
-
     .boxes {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: 1fr;  /* stack verticle */
+        gap: 15px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 5px;
     }
 
-    .boxes img {
-        width: 180px;
+    
+    .box1 img {
+        width: 100%;
         height: auto;
-        margin: 0 auto; /* center image */
         display: block;
+        margin: 0 auto;
     }
-
     .box1 h5 {
-        text-align: center;
-        margin-top: 5px;
-        font-size: 1.3rem;
-        color: var(--text);
-        
+        font-size: 1.2rem;
+        margin: 5px 0;
     }
 
-    .boxes .box-para {
-        text-align: center;
+    .box-para {
         font-size: 0.95rem;
-        color: var(--background);
-        background-color: var(--text);
-        margin-top: 8px;
-        padding: 8px 20px;
-        margin-left: 200px;
-        margin-right: 200px;
+        padding: 6px 10px;
+        margin: 5px auto;
+        width: fit-content;
+    }
+    .hover-text {
+        font-size: 12px;
+        padding: 5px 8px;
     }
 }
 
-/* Hamburger */
+
+
+/* hamburger */
 .hamburger-menu {
   font-size: 28px;
   color: white;
@@ -539,33 +545,49 @@ button:hover {
     padding: 15px 0;
   }
 }
-
 /* about page */
-@media(max-width: 600px) {
-.about-section h2 {
+@media (max-width: 600px) {
+
+  .about-section h2 {
+    margin: 20px;
+    padding: 12px;
+    font-size: 1.4rem;
     text-align: center;
-    padding: 16px 20px;
-    margin-left: 45px;
-    margin-right: 45px;
-}
-.about-section img{
-    margin-left: 180px;
-}
+  }
 
-.about-section p{
+  .about-section img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+  }
+
+  .about-section p {
+    margin: 15px 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .review-section h5 {
+    margin: 20px;
+    padding: 12px;
     font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1, .card2, .card3, .card4 {
+    width: 90%;
+  }
 }
 
-.review-section h5 {
-     text-align: center;
-    padding: 16px 20px;
-    margin-left: 45px;
-    margin-right: 45px;
-    font-size: 1.3rem;
-}
-}
 
-/* gallery page - mobile */
+/* gallery page  */
 @media (max-width: 600px) {
   .gallery-section h2,
   .gallery-section h4 {
@@ -598,15 +620,23 @@ button:hover {
 
 /* contact page */
 @media (max-width: 600px) {
-    form {
-        width: 90%;
-        margin-top: 40px;
+    .contact-section h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
     }
 
-    .contact-section h2,
-    .contact-section h3 {
-        margin: 20px;
-        margin-left: 200px;
-        font-size: 1.2rem;
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.95rem;
+        padding: 10px;
     }
 }
