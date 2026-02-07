@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head><script src="https://unpkg.com/scrollreveal"></script>
+<body>
+    <header>
+        <nav>
+            <img src="house6.jpeg">
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+            <ul class="nav-link">
+               <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h3>Please... Contact Us For More Details</h3>
+        <form id="contactForm">
+            <h2>Contact Us</h2>
+            <div class="label">
+            <label>Full Name:-</label>
+            <input type="text" name="fullname" id="fullname">
+            </div>
+            <div class="label">
+            <label>Email:-</label>
+            <input type="email" name="email" id="email">
+            </div>
+            <div class="label">
+            <label>Mobile No:-</label>
+            <input type="number" name="number" id="number">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+         <p id="successMsg" ></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer-ul">
+            <li><i class="fa-solid fa-link"></i>home</li>
+            <li><i class="fa-solid fa-link"></i>about</li>
+            <li><i class="fa-solid fa-link"></i>gallery</li>
+            <li><i class="fa-solid fa-link"></i>contact</li>
+        </ul>
+        <ul class="footer-ul">
+            <li><i class="fa-solid fa-house"></i>luxury villah</li>
+            <li><i class="fa-regular fa-house"></i>Twin villah</li>
+            <li><i class="fa-solid fa-house"></i>Bangalow</li>
+            <li><i class="fa-regular fa-house"></i>Duplex Houses</li>
+        </ul>
+        <ul class="footer-ul">
+           <li><i class="fa-solid fa-mobile"></i> contact us:- +91.......</li>
+          <li>  <i class="fa-brands fa-whatsapp"></i>whatsapp No:- +91.......</li>
+        </ul>
+    </footer>
+     <hr>
+        <p class="last">Made by Ananya kapil🤎</p>
+         <script src="java.js" defer></script>
+</body>
+</html>
