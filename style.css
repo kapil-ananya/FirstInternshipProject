@@ -550,6 +550,9 @@ button:hover {
 }
 /* about page */
 @media (max-width: 600px) {
+    .about-section {
+        margin-top: 220px;
+    }
 
   .about-section h2 {
     margin: 20px;
@@ -592,6 +595,9 @@ button:hover {
 
 /* gallery page  */
 @media (max-width: 600px) {
+    .gallery-section {
+        margin-top: 230px;
+    }
   .gallery-section h2,
   .gallery-section h4 {
     text-align: center;
@@ -623,6 +629,9 @@ button:hover {
 
 /* contact page */
 @media (max-width: 600px) {
+    .contact-section {
+        margin-top: 240px;
+    }
     .contact-section h3 {
         font-size: 1.3rem;
         margin-bottom: 20px;
